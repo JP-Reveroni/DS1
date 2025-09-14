@@ -10,4 +10,11 @@ public class Secretaria extends Funcionario{
     public void setRamal (int ramal) {
         this.ramal = ramal;
     }
+    
+    @Override
+    public void mostrarDados () {
+        super.mostrarDados();
+        System.out.println("Ramal: " + getRamal ());
+        System.out.println("Bonificação: " + calculaBonificacao ());
+    }
 }

@@ -31,26 +31,16 @@ public class TestaFuncionarios {
         //Mostrar os dados Gerente
         System.out.println("===================================");
         System.out.println("GERENTE");
-        System.out.println("Nome: " + g.getNome());
-        System.out.println("Salario: " + g.getSalario());
-        System.out.println("Usuario: " + g.getUsuario());
-        System.out.println("Senha: " + g.getSenha());
-        System.out.println("Bonificação: " + g.calculaBonificacao());
+        g.mostrarDados();
         
         //Mostrar os dados Telefonista
         System.out.println("===================================");
         System.out.println("TELEFONISTA");
-        System.out.println("Nome: " + t.getNome());
-        System.out.println("Salario: " + t.getSalario());
-        System.out.println("Estação de Trabalho: " + t.getEstacaoDeTrabalho());
-        System.out.println("Bonificação: " + t.calculaBonificacao());
+        t.mostrarDados();
         
         //Mostrar dados Secretaria
         System.out.println("====================================");
         System.out.println("SECRETARIA");
-        System.out.println("Nome: " + s.getNome());
-        System.out.println("Salario: " + s.getSalario());
-        System.out.println("Ramal: " +s.getRamal());
-        System.out.println("Bonificação: " + s.calculaBonificacao());
+        s.mostrarDados();
     }
 }

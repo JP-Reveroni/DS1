@@ -24,4 +24,12 @@ public class Gerente extends Funcionario{
     public double calculaBonificacao() {
         return this.getSalario() * 0.6 + 100;
     }
+    
+    @Override
+    public void mostrarDados() {
+        super.mostrarDados();
+        System.out.println("Usuário: " + getUsuario ());
+        System.out.println("Senha " + getSenha ());
+        System.out.println("Boonificação: " + calculaBonificacao ());
+    }
 }

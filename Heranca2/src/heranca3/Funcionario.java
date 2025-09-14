@@ -23,4 +23,10 @@ public class Funcionario {
     public double calculaBonificacao () {
         return this.salario * 0.1;
     }
+    
+    public void mostrarDados () {
+        System.out.println("Nome: " + getNome());
+        System.out.println("Salário: " + getSalario());
+        System.out.println("Bonificação: " + calculaBonificacao());
+    }
 }
